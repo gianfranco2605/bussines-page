@@ -46,6 +46,10 @@
     rgba(60, 51, 80, 0) 100%
   );
 }
+/* Hero Height */
+.height-screen {
+  height: 80vh;
+}
 
 .green-pink-gradient {
   background: "#D8FF00";

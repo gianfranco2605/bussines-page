@@ -2,7 +2,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+// import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constans";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -18,11 +18,11 @@ const ProjectsCard = ({index, name, description, tags, image, source_code_link})
       }}
       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[200px]">
           <img
              src={image}
              alt={name}
-             className="w-full h-full object-cover rounded-2xl " 
+             className="w-full h-full  rounded-2xl " 
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover ">
             {/* GITHUB DA ATTIVARE QUANDO MONKEY E PRONTO */}
@@ -64,7 +64,7 @@ const Works = () => {
       </motion.div>
 
       <div>
-        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[-17px] max-w-3xl leading-[-30px]" >Di seguito, presentiamo alcuni dei progetti che abbiamo sviluppato nel mondo reale. Ogni progetto è descritto con i relativi link ai repository e alle demo in diretta. Questi progetti riflettono la nostra abilità nel risolvere problemi complessi, lavorando con diverse tecnologie, e dimostrano come siamo in grado di gestire efficacemente i progetti.
+        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[-17px] max-w-3xl leading-[-30px]" >Di seguito, presentiamo alcuni dei progetti che abbiamo sviluppato nel mondo reale. Questi progetti riflettono la nostra abilità nel risolvere problemi complessi, lavorando con diverse tecnologie, e dimostrano come siamo in grado di gestire efficacemente i progetti.
 
         </motion.p>
         

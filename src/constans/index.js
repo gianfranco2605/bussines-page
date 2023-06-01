@@ -7,14 +7,11 @@ import {
     html,
     css,
     reactjs,
-    tailwind,
+    // tailwind,
     nodejs,
-    mongodb,
-    git,
-    figma,
+    // git,
     monkeyscrubs,
     smilesolution,
-    threejs,
     wordpress,
     personalportfolio,
 } from "../assets";
@@ -36,19 +33,19 @@ export const navLinks = [
 
 const services = [
     {
-    title: "Web Developer",
+    title: "Sviluppo di siti web personalizzati ",
     icon: web,
     },
     {
-    title: "React Developer",
+    title: "Web Design ",
     icon: mobile,
     },
     {
-    title: "Wordpress Developer",
+    title: "Ottimizzazione per i motori di ricerca (SEO)",
     icon: backend,
     },
     {
-    title: "Content Creator",
+    title: "Aggiornamenti e manutenzione del sito web",
     icon: creator,
     },
 ];
@@ -75,30 +72,18 @@ const technologies = [
     name: "Wordpress",
     icon: wordpress,
     },
-    {
-    name: "Tailwind CSS",
-    icon: tailwind,
-    },
+    // {
+    // name: "Tailwind CSS",
+    // icon: tailwind,
+    // },
     {
     name: "Node JS",
     icon: nodejs,
     },
-    {
-    name: "MongoDB",
-    icon: mongodb,
-    },
-    {
-    name: "Three JS",
-    icon: threejs,
-    },
-    {
-    name: "git",
-    icon: git,
-    },
-    {
-    name: "figma",
-    icon: figma,
-    },
+    // {
+    // name: "git",
+    // icon: git,
+    // },
     
 ];
 
@@ -109,10 +94,8 @@ const experiences = [
     iconBg: "#D8FF00",
     date: "Febraio 2023 - Febraio 2023",
     points: [        
-        "Sviluppo e mantenimento di un e-commerce web utilizzando WordPress e altre tecnologie.",
-        "Collaborazione con diversi team, tra cui designer, manager e altri sviluppatori, per creare prodotti di alta qualità.",
+        "Sviluppo e mantenimento di un progetto web utilizzando WordPress e altre tecnologie.",
         "Implementazione di un design responsivo e assicurazione della compatibilità cross-browser.",
-        "Fornitura di feedback costruttivi ad altri sviluppatori."
             ],
     },
     {
@@ -144,38 +127,15 @@ const experiences = [
     iconBg: "#D8FF00",
     date: "Maggio 2023 - Present",
     points: [
-        "Sviluppo e mantenimento di un progetto web utilizzando WordPress e altre tecnologie.",
+        "Sviluppo e mantenimento di un e-commerce web utilizzando WordPress e altre tecnologie.",
+        "Collaborazione con diversi team, tra cui designer, manager e altri sviluppatori, per creare prodotti di alta qualità.",
         "Implementazione di un design responsivo e assicurazione della compatibilità cross-browser.",
+        "Fornitura di feedback costruttivi ad altri sviluppatori."
+        
     ],
     },
 ];
 
-const testimonials = [
-    {
-    testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-    testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-    testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
 
 const projects = [
     {
@@ -224,7 +184,7 @@ const projects = [
     {
     name: "Smile Solution",
     description:
-        "Abbiamo creato un'applicazione WordPress personalizzata con un tema sviluppato 'from-scratch' Utilizzando diversi plugin e widget e integrato diverse librerie come Swiper, Lightbox, ecc. per creare un sito dinamico, minimalista e con diverse funzionalità",
+        "Abbiamo creato un'applicazione WordPress personalizzata con un tema sviluppato 'from-scratch'.Creazione di diversi plugins e widgets e usando diverse librerie come Swiper, Lightbox, ecc. per creare un sito dinamico, minimalista e con diverse funzionalità",
     tags: [
         {
         name: "Wordpress",
@@ -244,4 +204,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

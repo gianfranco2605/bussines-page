@@ -59,8 +59,11 @@ const Contact = () => {
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
-        <p className={styles.sectionSubText}>Facciamo 2 chiacchiere...</p>
         <h3 className={styles.sectionHeadText}>Contatto</h3>
+        <h3 className={`${styles.sectionHeadText} font-thin`}>
+        <a href="tel:3382835594">338-283-55-94</a>
+        </h3>
+        <p className={styles.sectionSubText}>RICHIEDI UN PREVENTIVO</p>
 
         <form
         ref={formRef}
