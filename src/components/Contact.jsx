@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
@@ -26,38 +25,48 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true)
-
-    emailjs.send(
-      'service_t1a3afn',
-      'template_9uoqfqc',
-      {
-        form_name: form.name,
-        to_name: 'Navas',
-        from_email: form.email,
-        to_email: 'gianf2605@gmail.com',
-        message: form.message
-      },
-      'zEVmLpVrE9INN_MLy'
-    )
-    .then(() => {
-      setLoading(false)
-      alert('Grazie, sarai ricontattato il prima possibile');
-
-      setForm({
-        name: '',
-        email: '',
-        message: ''
-      })
-    },(error) => {
-      setLoading(error);
-      alert('Qualcosa è andato storto')
+    setLoading(true);
+  
+    // Validate form fields
+    if (form.name.trim() === '' || form.email.trim() === '' || form.message.trim() === '') {
+      setLoading(false);
+      alert('Per favore compila tutti i campi.');
+      return;
     }
-    )
-  }
+  
+    emailjs
+      .send(
+        'service_t1a3afn',
+        'template_9uoqfqc',
+        {
+          form_name: form.name,
+          to_name: 'Navas',
+          from_email: form.email,
+          to_email: 'gianf2605@gmail.com',
+          message: form.message
+        },
+        'zEVmLpVrE9INN_MLy'
+      )
+      .then(() => {
+        setLoading(false);
+        alert('Grazie, sarai ricontattato il prima possibile');
+  
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        });
+      })
+      .catch((error) => {
+        setLoading(false);
+        alert('Qualcosa è andato storto');
+        console.log(error);
+      });
+  };
+  
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt-12 xl:mx-20  xl:flex-row flex-col-reverse  overflow-hidden'>
       <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
         <h3 className={styles.sectionHeadText}>Contatto</h3>
         <h3 className={`${styles.sectionHeadText} font-thin`}>
@@ -68,7 +77,7 @@ const Contact = () => {
         <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className='mt-12 flex flex-col gap-8 '
+        className='mt-12 flex flex-col gap-6 '
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Nome</span>
@@ -78,7 +87,7 @@ const Contact = () => {
             value={form.name}
             onChange={handleChange}
             placeholder=''
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-whitr rounded-lg outline-none border-none'
+            className='bg-tertiary py-2 px-3 placeholder:text-secondary text-white rounded-lg outline-none border-none'
              />
 
           </label>
@@ -90,7 +99,7 @@ const Contact = () => {
             value={form.email}
             onChange={handleChange}
             placeholder=''
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-whitr rounded-lg outline-none border-none'
+            className='bg-tertiary py-2 px-3 placeholder:text-secondary text-white rounded-lg outline-none border-none'
              />
 
           </label>
@@ -98,12 +107,12 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Mesaggio</span>
             <textarea
-            rows="7"
+            rows="2"
             name='message'
             value={form.message}
             onChange={handleChange}
             placeholder=''
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-whitr rounded-lg outline-none border-none'
+            className='bg-tertiary py-2 px-3 placeholder:text-secondary text-whitr rounded-lg outline-none border-none'
              />
 
           </label>
@@ -117,13 +126,6 @@ const Contact = () => {
 
       </motion.div>
 
-      <motion.div
-         variants={slideIn('right', "tween", 0.2, 1)}
-         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <EarthCanvas />
-
-      </motion.div>
     </div>
   )
 }

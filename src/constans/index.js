@@ -3,16 +3,8 @@ import {
     backend,
     creator,
     web,
-    javascript,
-    html,
-    css,
-    reactjs,
-    // tailwind,
-    nodejs,
-    // git,
     monkeyscrubs,
     smilesolution,
-    wordpress,
     personalportfolio,
 } from "../assets";
 
@@ -50,42 +42,6 @@ const services = [
     },
 ];
 
-const technologies = [
-    {
-    name: "HTML 5",
-    icon: html,
-    },
-    {
-    name: "CSS 3",
-    icon: css,
-    },
-    {
-    name: "JavaScript",
-    icon: javascript,
-    },
-    
-    {
-    name: "React JS",
-    icon: reactjs,
-    },
-    {
-    name: "Wordpress",
-    icon: wordpress,
-    },
-    // {
-    // name: "Tailwind CSS",
-    // icon: tailwind,
-    // },
-    {
-    name: "Node JS",
-    icon: nodejs,
-    },
-    // {
-    // name: "git",
-    // icon: git,
-    // },
-    
-];
 
 const experiences = [
     {
@@ -204,4 +160,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, experiences, projects };

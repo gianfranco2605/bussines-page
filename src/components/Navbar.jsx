@@ -22,7 +22,7 @@ const Navbar = () => {
         }}
         >
           <img src={logo} alt="logo" className='w-12 h-12 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer'> NAVAS <a href="tel:3382835594" className="block text-xs text-[#D8FF00]">338-283-55-94</a></p>
+          <p className='text-white text-[18px] font-bold cursor-pointer'>DIGITAL NAVAS</p>
         
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
