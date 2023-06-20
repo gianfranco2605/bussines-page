@@ -10,7 +10,7 @@ import close from "./close.svg";
 
 import monkeyscrubs from "./monkeyscrubs.png";
 import personalportfolio from "./personalportfolio.png";
-import smilesolution from "./smilesolution.png";
+import btmmachines from "./btmmachines.png"
 
 export {
   logo,
@@ -23,5 +23,5 @@ export {
   close,
   monkeyscrubs,
   personalportfolio,
-  smilesolution,
+  btmmachines,
 };

@@ -15,15 +15,21 @@ const ProjectsCard = ({index, name, description, tags, image, source_code_link})
         scale: 1,
         speed: 450
       }}
+      
       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[150px]">
           <img
              src={image}
              alt={name}
-             className="rounded-2xl object-cover h-fit w-fit" 
+             className="w-full h-full object-cover rounded-2xl" 
           />
+          
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover ">
+            <div
+              onClick={() => window.open(source_code_link, "blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >Live</div>
 
           </div>
    
@@ -57,7 +63,7 @@ const Works = () => {
       </motion.div>
 
       <div>
-        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[-17px] max-w-3xl leading-[-30px]" >Di seguito, presentiamo alcuni dei progetti che abbiamo sviluppato nel mondo reale. Questi progetti riflettono la nostra abilità nel risolvere problemi complessi, lavorando con diverse tecnologie, e dimostrano come siamo in grado di gestire efficacemente i progetti.
+        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[-17px] max-w-3xl leading-[-30px]" >Di seguito, presentiamo alcuni dei progetti che abbiamo sviluppato nel mondo reale. Questi progetti riflettono la nostra abilità nel risolvere problemi complessi, grazie all’impiego di  diverse tecnologie, e dimostrano come siamo in grado di gestire efficacemente le particolari richieste.
 
         </motion.p>
         

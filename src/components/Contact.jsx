@@ -42,7 +42,7 @@ const Contact = () => {
           form_name: form.name,
           to_name: 'Navas',
           from_email: form.email,
-          to_email: 'gianf2605@gmail.com',
+          to_email: 'websites@digitalnavas.it',
           message: form.message
         },
         'zEVmLpVrE9INN_MLy'

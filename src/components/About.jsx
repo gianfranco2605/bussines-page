@@ -37,11 +37,10 @@ const About = () => {
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Chi Siamo</h2>
       </motion.div>
-      <motion.div variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w3x leading-[30px]'>Ci occupiamo di progettazione, sviluppo e implementazione di soluzioni web su misura. Siamo in grado di creare soluzioni web funzionali ed intuitive che soddisfano le specifiche esigenze dei nostri clienti. Inoltre, ci impegniamo a garantire un'attenzione ai dettagli e una cura nella progettazione che assicurano la massima qualità dei nostri servizi. Siamo sempre a disposizione per discutere i tuoi progetti e fornirti un preventivo gratuito per i nostri servizi di sviluppo web personalizzati. Contattaci per maggiori informazioni.
+      <motion.div variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w3x leading-[30px]'>Ci occupiamo di progettazione, sviluppo e implementazione di soluzioni web su misura. Siamo in grado di creare soluzioni web funzionali ed intuitive capaci di soddisfare le specifiche esigenze dei nostri clienti. Inoltre, ci impegniamo a garantire un'attenzione ai dettagli e una cura nella progettazione che assicurano la massima qualità dei nostri servizi. Siamo sempre a disposizione per discutere nuove proposte e fornire un preventivo gratuito dei nostri servizi di sviluppo web personalizzati. Contattaci per maggiori informazioni.
       </motion.div>
       <div className='mt-20 flex flex-wrap gap-10'>{services.map((service, index) => (<ServiceCard key={service.title} index={index} {...service}/>
       ))}
-
       </div>
     </>
   )

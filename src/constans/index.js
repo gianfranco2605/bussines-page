@@ -4,8 +4,8 @@ import {
     creator,
     web,
     monkeyscrubs,
-    smilesolution,
     personalportfolio,
+    btmmachines
 } from "../assets";
 
 export const navLinks = [
@@ -98,7 +98,7 @@ const projects = [
     name: "Monkey Scrubs",
     description:
      
-        "Piataforma e-commerce che permette a gli usuari di cercare, comprare vestimenti medici e non solo. La piattaforma offre un'esperienza di acquisto online facile e intuitiva, con funzionalità come la ricerca avanzata molto altre",
+        "Piataforma e-commerce che permette a gli usuari di cercare, comprare vestimenti medici e non solo. La piattaforma offre un'esperienza di acquisto online facile e intuitiva, con funzionalità come la ricerca avanzata e molto altre",
     tags: [
         {
         name: "Wordpress",
@@ -108,39 +108,14 @@ const projects = [
         name: "Woocomerce",
         color: "green-text-gradient",
         },
-        // {
-        // name: "Elementor",
-        // color: "pink-text-gradient",
-        // },
     ],
     image: monkeyscrubs,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://monkeyscrubstg.wpengine.com/",
     },
     {
-    name: "Personal Portafoglio",
+    name: "Btm Machines",
     description:
-        "Applicazione web personale fatta con React utilizzando le diverse funzionalità che offre il framework React, chiamati hooks, progetto innovativo e all'avanguardia che ti permetterà di sfruttare al massimo le potenzialità di questa tecnologia di sviluppo web.",
-    tags: [
-        {
-        name: "react",
-        color: "blue-text-gradient",
-        },
-        {
-        name: "restapi",
-        color: "green-text-gradient",
-        },
-        {
-        name: "hooks",
-        color: "pink-text-gradient",
-        },
-    ],
-    image: personalportfolio,
-    source_code_link: "https://github.com/",
-    },
-    {
-    name: "Smile Solution",
-    description:
-        "Abbiamo creato un'applicazione WordPress personalizzata con un tema sviluppato 'from-scratch'.Creazione di diversi plugins e widgets e usando diverse librerie come Swiper, Lightbox, ecc. per creare un sito dinamico, minimalista e con diverse funzionalità",
+        "Abbiamo creato una pagina da zero su WordPress, sviluppando un tema personalizzato e integrando API per la ricerca interattiva sulla mappa. Ora puoi trovare facilmente gli ATM Bitcoin Machines più vicini grazie al nostro lavoro di sviluppo dedicato.",
     tags: [
         {
         name: "Wordpress",
@@ -155,9 +130,30 @@ const projects = [
         color: "pink-text-gradient",
         },
     ],
-    image: smilesolution,
-    source_code_link: "https://github.com/",
+    image: btmmachines,
+    source_code_link: "https://btmmachines.com/",
     },
+    {
+        name: "Personal Portafoglio",
+        description:
+            "Applicazione web personale realizzata con React, utilizzando le diverse funzionalità offerte dal framework, chiamate hooks. Si tratta di un progetto innovativo e all'avanguardia che ti permetterà di sfruttare appieno le potenzialità di questa tecnologia per lo sviluppo web.",
+        tags: [
+            {
+            name: "react",
+            color: "blue-text-gradient",
+            },
+            {
+            name: "restapi",
+            color: "green-text-gradient",
+            },
+            {
+            name: "hooks",
+            color: "pink-text-gradient",
+            },
+        ],
+        image: personalportfolio,
+        source_code_link: "https://portfolio-navas.netlify.app/",
+        },
 ];
 
 export { services, experiences, projects };
